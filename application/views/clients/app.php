@@ -20,7 +20,7 @@
 
     <!-- Css animations  -->
     <link href="<?php echo site_url($basepage . 'css/animate.css'); ?>" rel="stylesheet">
-    <link href="<?php echo site_url($basepage . 'css/style.default.css'); ?>" rel="stylesheet" id="theme-stylesheet">
+    <link href="<?php echo site_url($basepage . 'css/pay-inm.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/custom.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.carousel.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.theme.css'); ?>" rel="stylesheet">
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="row">
                             <div class="col-sm-7 text-center">

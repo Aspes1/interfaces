@@ -7,11 +7,11 @@
                     <i class="fa fa-phone"></i> (061) 664-0996 &nbsp;
                     <i class="fa fa-envelope"></i> inm.helpdesk@gmail.com
                 </p>
-                
+
                 <p class="hidden-md hidden-lg">
                     <a href="#" data-animate-hover="pulse">
                         <i class="fa fa-phone"></i>
-                    </a>  
+                    </a>
                     <a href="#" data-animate-hover="pulse">
                         <i class="fa fa-envelope"></i>
                     </a>
@@ -19,9 +19,9 @@
 
             </div>
             <div class="col-xs-7">
-                <div class="login">
+                <div class="registrasi">
                     <a href="#" data-toggle="modal" data-target="#login-modal">
-                        <i class="fa fa-user-plus"></i> 
+                        <i class="fa fa-user-plus"></i>
                         <span class="text-uppercase">Pendaftaran</span>
                     </a>
                 </div>
@@ -55,9 +55,6 @@
                     <li class="">
                         <a href="#">Profil</a>
                     </li>
-                    <li class="">
-                        <a href="#">Pelayanan</a>
-                    </li>
                     <li class="dropdown">
                         <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown">
                             Panduan <b class="caret"></b>
@@ -79,6 +76,9 @@
                     </li>
                     <li class="">
                         <a href="#">Testimoni</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Login</a>
                     </li>
                 </ul>
             </div>
