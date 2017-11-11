@@ -24,7 +24,7 @@
                         <div class="media-body">
                             <h4 class="media-heading">PT. Interprima Nusantara Mandiri</h4>
                             <p class="lead">
-                                PT. INTERPRIMA NUSANTARA MANDIRI (INM) telah melayani bisnis local dan juga bekerjasama dengan perusahaan luar di bagian perbankan, sistemasi, switching, sektor pemerintahan lebih dari 10 tahun yang sudah berdiri dari TAHUN 2008.
+                                PT. Interprima Nusantara Mandiri (INM) telah melayani bisnis local dan juga bekerjasama dengan perusahaan luar di bagian perbankan, sistemasi, switching, sektor pemerintahan lebih dari 10 tahun yang sudah berdiri dari TAHUN 2008.
                             </p>
                             <p class="lead">
                                 Kami sekarang telah bekerja sama dengan lebih dari 3500 loket aktif dan terus bertambah diberbagai daerah termasuk Pulau Sumatera, Kalimantan, Jawa, Dan Lain-Lain.

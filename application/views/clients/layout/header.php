@@ -21,8 +21,8 @@
             <div class="col-xs-7">
                 <div class="registrasi">
                     <a href="#" data-toggle="modal" data-target="#login-modal">
-                        <i class="fa fa-user-plus"></i>
-                        <span class="text-uppercase">Pendaftaran</span>
+                        <i class="fa fa-sign-in"></i>
+                        <span class="text-uppercase">Masuk</span>
                     </a>
                 </div>
             </div>
@@ -77,8 +77,20 @@
                     <li class="<?php echo ($subtitle == 'testimoni')? 'active' : ''; ?>">
                         <a href="#">Testimoni</a>
                     </li>
-                    <li class="">
-                        <a href="#">Login</a>
+
+
+                    <li class="<?php echo (strpos($subtitle, '_')) ? ((explode("_", $subtitle)[1] =='pendaftaran') ? 'active' : '') : ''; ?> dropdown">
+                        <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                            Pendaftaran Loket <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="<?php echo (strpos($subtitle, '_')) ? ((explode("_", $subtitle)[0] =='cara') ? 'active' : '') : ''; ?>">
+                                <a href="<?php echo site_url('app/cara_daftar'); ?>">Prosedur Pendaftaran</a>
+                            </li>
+                            <li class="<?php echo (strpos($subtitle, '_')) ? ((explode("_", $subtitle)[0] =='form') ? 'active' : '') : ''; ?>">
+                                <a href="contact2.html">Form Pendaftaran</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

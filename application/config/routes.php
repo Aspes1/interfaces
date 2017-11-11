@@ -50,8 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['app/home']              = 'LandingPage/getHome';
-$route['app/profil']            = 'LandingPage/getProfil';
+$route['app/home']         = 'LandingPage/getHome';
+$route['app/profil']       = 'LandingPage/getProfil';
+$route['app/cara_daftar']  = 'LandingPage/getRegisterProcedure';
+$route['app/pendaftaran']  = 'LandingPage/getFormRegistration';
 
 $route['default_controller']    = $route['app/home'];
 $route['404_override']          = '';
