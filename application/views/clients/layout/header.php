@@ -49,11 +49,11 @@
 
             <div class="navbar-collapse collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">Home</a>
+                    <li class="<?php echo ($subtitle == 'home')? 'active' : ''; ?>">
+                        <a href="<?php echo site_url('app/home'); ?>">Home</a>
                     </li>
-                    <li class="">
-                        <a href="#">Profil</a>
+                    <li class="<?php echo ($subtitle == 'profil')? 'active' : ''; ?>">
+                        <a href="<?php echo site_url('app/profil'); ?>">Profil</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown">
@@ -74,7 +74,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="<?php echo ($subtitle == 'testimoni')? 'active' : ''; ?>">
                         <a href="#">Testimoni</a>
                     </li>
                     <li class="">

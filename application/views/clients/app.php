@@ -30,19 +30,16 @@
 
 <div id="all">
     <header>
-        <?php echo $header; ?>
+        <?php echo $headers; ?>
     </header>
-    
+
     <div id="contents">
         <?php echo $contents; ?>
     </div>
 
-
     <footer id="footer">
-        <?php echo $footer;  ?>
+        <?php echo $footers;  ?>
     </footer>
-
-
 
 </div>
 

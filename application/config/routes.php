@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['app/home']              = 'LandingPage/getHome';
+$route['app/profil']            = 'LandingPage/getProfil';
 
 $route['default_controller']    = $route['app/home'];
 $route['404_override']          = '';

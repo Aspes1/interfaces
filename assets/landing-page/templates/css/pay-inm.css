@@ -2983,9 +2983,9 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #get-it {
-	background: #467fbf;
-	padding: 50px 0 30px;
-	color: #fff;
+	background: #d6e8fd;
+	padding-top: 10px;
+	color: #444;
 	text-align: center;
 }
 
@@ -2995,14 +2995,16 @@ fieldset[disabled] .btn-template-primary.active {
 #get-it h4,
 #get-it h5,
 #get-it h6 {
-	color: #fff;
+	color: #444;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 }
 
 #get-it p {
-	margin: 0 0 20px;
+	font-size: 15px;
+	font-weight: 700;
+	/*margin: 0 0 20px;*/
 }
 
 #footer {
@@ -4055,8 +4057,12 @@ p {
 }
 
 .lead {
-	margin-bottom: 20px;
-	font-size: 18px;
+	color:#000;
+	font-family: 'Roboto';
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 14px;
+	line-height: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -4276,14 +4282,14 @@ a.list-group-item.active>.badge,
 /** Image Media Class Styles **/
 .img-media{
 	width: 60px;
-	height: 60px;	
+	height: 60px;
 }
 
 .img-left{
 	margin-left:20px;
 }
 
-.img-right{ 
+.img-right{
 	margin-right: 20px;
 }
 
