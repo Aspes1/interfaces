@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['app/home']         = 'LandingPage/getHome';
 $route['app/profil']       = 'LandingPage/getProfil';
 $route['app/cara_daftar']  = 'LandingPage/getRegisterProcedure';
-$route['app/pendaftaran']  = 'LandingPage/getFormRegistration';
+$route['app/form_daftar']  = 'LandingPage/getFormRegistration';
 
 $route['default_controller']    = $route['app/home'];
 $route['404_override']          = '';

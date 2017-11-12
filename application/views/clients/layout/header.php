@@ -88,7 +88,7 @@
                                 <a href="<?php echo site_url('app/cara_daftar'); ?>">Prosedur Pendaftaran</a>
                             </li>
                             <li class="<?php echo (strpos($subtitle, '_')) ? ((explode("_", $subtitle)[0] =='form') ? 'active' : '') : ''; ?>">
-                                <a href="contact2.html">Form Pendaftaran</a>
+                                <a href="<?php echo site_url('app/form_daftar') ?>">Form Pendaftaran</a>
                             </li>
                         </ul>
                     </li>
