@@ -24,6 +24,12 @@
     <link href="<?php echo site_url($basepage . 'css/custom.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.carousel.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.theme.css'); ?>" rel="stylesheet">
+
+    <script type="text/javascript">
+        var Settings = {
+            base_url : '<?php echo base_url(); ?>'
+        }
+    </script>
 </head>
 
 <body>
@@ -52,5 +58,18 @@
 <script src="<?php echo site_url($basepage . 'js/jquery.parallax-1.1.3.js'); ?>"></script>
 <script src="<?php echo site_url($basepage . 'js/front.js'); ?>"></script>
 <script src="<?php echo site_url($basepage . 'js/owl.carousel.min.js'); ?>"></script>
+
+<?php
+if(isset($scripts) && count($scripts) > 0)
+{
+    foreach ($scripts as $v)
+    {
+?>
+        <script type="text/javascript" src="<?php echo site_url($v); ?>"></script>
+<?php
+    }
+}
+?>
+
 </body>
 </html>

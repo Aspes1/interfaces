@@ -4328,3 +4328,8 @@ a.list-group-item.active>.badge,
 .no-border{
 	border:none;
 }
+
+span.text-warning{
+	color:#e2620d !important;
+	font-style: italic !important;
+}

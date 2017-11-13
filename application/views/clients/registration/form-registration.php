@@ -23,13 +23,13 @@
 				<div class="col-md-5">
                     <h3 class="text-info">Petunjuk Pendaftaran</h3>
                     <ol class="list-group" style="text-align:justify;">
-                        
+
                         <li class="list-group-item no-border">
                             Proses pendaftaran loket PPOB akan diproses di jam 06.00 – 20.00 WIB. Pendaftaran diluar jam tersebut akan diproses keesokan harinya.
                         </li>
 
                         <li class="list-group-item no-border">
-                            Proses pendaftaran hanya dapat dilakukan di device PC/Laptop dan pastikan sistem operasi yang anda gunakan adalah <strong>Windows XP, 7,Vist dan 10 atau IOS </strong> 
+                            Proses pendaftaran hanya dapat dilakukan di device PC/Laptop dan pastikan sistem operasi yang anda gunakan adalah <strong>Windows XP, 7,Vist dan 10 atau IOS </strong>
                         </li>
 
                         <li class="list-group-item no-border">
@@ -40,24 +40,7 @@
 				</div>
 
 				<div class="col-md-7">
-					<form class="form-horizontal" role="form">
-                        <!-- Model Fee -->
-                        <div class="form-group">
-                            <label class="control-label col-sm-4">Model Fee</label>
-                            <div class="col-sm-7">
-                                <div class="radio-inline">
-                                    <label>
-                                        <input type="radio" name="rd_fee" value="feelive">Fee Live
-                                    </label>
-                                </div>
-                                <div class="radio-inline">
-                                    <label>
-                                        <input type="radio" name="rd_fee" value="feebln">Fee Bulanan
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
+					<form id="form-pendaftaran" class="form-horizontal" role="form">
                         <!-- Nama Lengkap -->
 						<div class="form-group">
 							<label for="txt_nama_loket" class="col-sm-4 control-label">Nama Loket</label>
@@ -110,11 +93,14 @@
 						<div class="form-group">
 							<label for="sel_propinsi" class="col-sm-4 control-label">Propinsi</label>
 							<div class="col-sm-7">
-								<select id="sel_propinsi" name="sel_propinsi" class="form-control">
-                                    <option>~~ Pilih Propinsi ~~</option>
-									<option>Sumatera Utara</option>
-									<option>Sumatera Selatan</option>
-								</select>
+								<select name="sel_propinsi" id="sel_propinsi" onchange="getPropinsi(this.value)">
+									<option value="-">Pilih Provinsi</option>
+									<?php 
+										foreach($provinsi as $data){
+											echo '<option value="'.$data->id_prov.'">'.$data->nama.'</option>';
+										}
+									?>
+								<select>
 							</div>
 						</div>
 
@@ -164,4 +150,3 @@
 		</section>
 	</div>
 </div>
-

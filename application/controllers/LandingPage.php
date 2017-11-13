@@ -4,6 +4,7 @@ class LandingPage extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
+
     }
 
     public function getHome()
@@ -30,6 +31,10 @@ class LandingPage extends MY_Controller {
     public function getFormRegistration()
     {
         $data = $this->nodepath->formatPaths();
+        $data['scripts'] = array(
+            $data['basepage'] . 'js/jquery-validation/jquery.validate.min.js',
+            $data['basepage'] . 'js/templates/form-handlers.js'
+        );
         $data['subtitle'] = 'form_pendaftaran';
         $this->render_page('clients/registration/form-registration', $data);
     }
