@@ -55,6 +55,8 @@ $route['app/profil']       = 'LandingPage/getProfil';
 $route['app/cara_daftar']  = 'LandingPage/getRegisterProcedure';
 $route['app/form_daftar']  = 'LandingPage/getFormRegistration';
 
+$route['testAgent']  = 'Pendaftaran/testAgent';
+
 $route['default_controller']    = $route['app/home'];
 $route['404_override']          = '';
 $route['translate_uri_dashes']  = FALSE;

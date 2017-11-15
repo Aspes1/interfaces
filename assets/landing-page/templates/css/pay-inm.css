@@ -4064,7 +4064,7 @@ p {
 
 
 #content{
-	padding:5px;	
+	padding:5px;
 }
 
 .lead {
@@ -4329,7 +4329,7 @@ a.list-group-item.active>.badge,
 	border:none;
 }
 
-span.text-warning{
+.text-warning{
 	color:#e2620d !important;
 	font-style: italic !important;
 }
