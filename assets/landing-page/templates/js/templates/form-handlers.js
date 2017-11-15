@@ -84,15 +84,44 @@ $(document).ready(function () {
     //Event Form Pendaftaran Submit
     formPendaftaran.on('submit', function (e) {
         e.preventDefault();
+        var str_url = Setting.base_url + 'app/pendaftaran/daftar';
 
-        if(formPendaftaran.valid()){
-            alert('Berhasil');
+        var components = {
+            nama_loket   : $("input[name=nama_loket]").val(),
+            no_ktp       : $("input[name=no_ktp]").val(),
+            no_npwp      : ($("input[name=no_npwp]").val() != '') ? $("input[name=no_npwp]").val():'0',
+            nama_lengkap : $("input[name=nama_lengkap]").val(),
+            email        : $("input[name=email]").val(),
+            no_telepon_1 : $("input[name=no_telepon_1]").val(),
+            no_telepon_2 : $("input[name=no_telepon_2]").val(),
+            alamat       : $('textarea#alamat').val(),
+            ip_address   : $("input[name=ip_address]").val(),
+            mac_address  : $("input[name=mac_address]").val()
         }
 
+        console.log(components);
+        console.log(str_url);
+        // if(formPendaftaran.valid()){
+        //     alert('Berhasil');
+        // }
+
+        // axios.post(str_url, components).then(function (response) {
+        //     if(response.data.status == true)
+        //         confirmAlert('INFORMASI SUKSES', response.data.messages, response.data.urls) ;
+        //     else
+        //         confirmAlert('INFORMASI GAGAL', response.data.messages, response.data.urls);
+        //
+        //
+        // }).catch(function (error) {
+        //     confirmAlert('ERROR', error, '');
+        //     console.log(error);
+        // });
     });
 
-    inputFileKTP.change(function() {
+    inputFileKTP.change(function(e) {
         readURLFile(this, imageFileKTP);
+        var fileName = e.target.files[0].name;
+        console.log(fileName)
     });
 
     inputFileNPWP.change(function() {

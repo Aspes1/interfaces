@@ -33,12 +33,13 @@ class LandingPage extends MY_Controller {
         $data = $this->nodepath->formatPaths();
 
         $data['scripts'] = array(
+            $data['basepage'] . 'axios/axios.min.js',
             $data['basepage'] . 'js/jquery-validation/jquery.validate.min.js',
             $data['basepage'] . 'js/templates/form-handlers.js'
         );
 
         $data['subtitle'] = 'form_pendaftaran';
-        
+
         $data['_mac'] = $this->real_agent->getMacDevices();
         $data['_ip']  = $this->real_agent->getRealIpAddr();
 
