@@ -24,6 +24,7 @@
     <link href="<?php echo site_url($basepage . 'css/custom.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.carousel.css'); ?>" rel="stylesheet">
     <link href="<?php echo site_url($basepage . 'css/owl.theme.css'); ?>" rel="stylesheet">
+    <link href="<?php echo site_url($basepage . 'jquery-confirm/jquery-confirm.min.css') ?>" rel="stylesheet">
 
     <script type="text/javascript">
         var Settings = {
@@ -51,6 +52,7 @@
 
 <script src="<?php echo site_url($basepage . 'js/jquery-1.11.0.min.js'); ?>"></script>
 <script src="<?php echo site_url($bootstrap . 'js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo site_url($basepage . 'jquery-confirm/jquery-confirm.min.js') ?>"></script>
 
 <script src="<?php echo site_url($basepage . 'js/jquery.cookie.js'); ?>"></script>
 <script src="<?php echo site_url($basepage . 'js/waypoints.min.js'); ?>"></script>

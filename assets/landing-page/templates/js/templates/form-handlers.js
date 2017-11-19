@@ -84,36 +84,55 @@ $(document).ready(function () {
     //Event Form Pendaftaran Submit
     formPendaftaran.on('submit', function (e) {
         e.preventDefault();
-        var str_url = Setting.base_url + 'app/pendaftaran/daftar';
+        var str_url   = Settings.base_url + 'app/pendaftaran/daftar';
 
-        var components = {
-            nama_loket   : $("input[name=nama_loket]").val(),
-            no_ktp       : $("input[name=no_ktp]").val(),
-            no_npwp      : ($("input[name=no_npwp]").val() != '') ? $("input[name=no_npwp]").val():'0',
-            nama_lengkap : $("input[name=nama_lengkap]").val(),
-            email        : $("input[name=email]").val(),
-            no_telepon_1 : $("input[name=no_telepon_1]").val(),
-            no_telepon_2 : $("input[name=no_telepon_2]").val(),
-            alamat       : $('textarea#alamat').val(),
-            ip_address   : $("input[name=ip_address]").val(),
-            mac_address  : $("input[name=mac_address]").val()
+        var file_ktp  = inputFileKTP.prop('files')[0];
+        var file_npwp = inputFileNPWP.prop('files')[0];
+
+        // var form_data = new FormData();
+        // form_data.append('file_ktp', file_ktp);
+
+        var fKTP = $('#file_ktp').val();
+
+        if(formPendaftaran.valid())
+        {
+            if(file_ktp.name == '')
+            {
+                confirmAlert('GAGAL', 'File Gambar KTP belum di upload', '')
+                console.log('Error');
+            }
         }
 
-        console.log(components);
-        console.log(str_url);
+
+        // var components = {
+        //     nama_loket   : $("input[name=nama_loket]").val(),
+        //     no_ktp       : $("input[name=no_ktp]").val(),
+        //     no_npwp      : ($("input[name=no_npwp]").val() != '') ? $("input[name=no_npwp]").val():'0',
+        //     nama_lengkap : $("input[name=nama_lengkap]").val(),
+        //     email        : $("input[name=email]").val(),
+        //     no_telepon_1 : $("input[name=no_telepon_1]").val(),
+        //     no_telepon_2 : $("input[name=no_telepon_2]").val(),
+        //     alamat       : $('textarea#alamat').val(),
+        //     ip_address   : $("input[name=ip_address]").val(),
+        //     mac_address  : $("input[name=mac_address]").val(),
+        //     file_ktp     : $('#file_ktp').prop('files')[0]
+        // }
+
+
+        // var file_data = $('#file_ktp').prop('files')[0];
+        // var form_data = new FormData();
+        // form_data.append('file', file_data);
+        // console.log(form_data);
+        // console.log(file_data);
+        //console.log(components);
+        //console.log(str_url);
         // if(formPendaftaran.valid()){
         //     alert('Berhasil');
         // }
-
-        // axios.post(str_url, components).then(function (response) {
-        //     if(response.data.status == true)
-        //         confirmAlert('INFORMASI SUKSES', response.data.messages, response.data.urls) ;
-        //     else
-        //         confirmAlert('INFORMASI GAGAL', response.data.messages, response.data.urls);
-        //
-        //
+        //console.log(file_ktp);
+        // axios.post(str_url, form_data).then(function (response) {
+        //     console.log(response);
         // }).catch(function (error) {
-        //     confirmAlert('ERROR', error, '');
         //     console.log(error);
         // });
     });
@@ -139,5 +158,25 @@ $(document).ready(function () {
         }
     }
 
+
+    var confirmAlert = function(title, messages, urls='') 
+    {
+        $.confirm({
+            title: (title != '') ? title:' DEFAULT MESSAGES',
+            content: "<p>" + messages + "</p>",
+            typeAnimated: true,
+            theme:'supervan',
+            animation: 'zoom',
+            animationSpeed: '500',
+            buttons:{
+                
+                close: function() {
+                    if(urls!='')
+                        window.location.href = urls;
+                }
+    
+            }
+        });
+    }
 
 });
