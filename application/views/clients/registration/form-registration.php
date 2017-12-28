@@ -1,3 +1,4 @@
+
 <div id="heading-breadcrumbs">
 	<div class="container">
 		<div class="row">
@@ -15,7 +16,7 @@
 			<div class="row lead">
 				<div class="col-md-12">
 					<p>
-						Pendaftaran loket PPOB INM ini tidak dipungut biaya. Silahkan isi form pendaftaran berikut ini dengan data yang benar.
+						Silahkan isi form pendaftaran berikut ini dengan data yang benar.
 					</p>
 				</div>
 			</div>
@@ -161,6 +162,9 @@
 					</div>
 				</form>
 			</div>
+			<div class="clearfix"></div><br>
+			<div class="clearfix"></div><br>
+			<div class="clearfix"></div><br>
 		</section>
 	</div>
 </div>

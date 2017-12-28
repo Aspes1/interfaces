@@ -5,3 +5,14 @@
 4. Bank Bukopin
 5. Bank BCA
 6. Bank Mandiri Syariah
+
+
+Yang Boleh di sentuh Hagai : Application :	- Config
+												- Routes
+
+											- COntroller
+												- Landing Pages
+
+											- View
+												- Clients
+													
